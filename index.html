@@ -14,7 +14,11 @@
 	<script src="js/jquery.hello-world.js"></script>
 	<script>
 		$(document).ready( function() {
-		    $('h2').helloWorld().css('color', 'red');
+		    $('h2').helloWorld({
+		    	text: 'Yo',
+		    	color: 'blue',
+		    	callback: alert('done')
+		    });
 		});
 </script>
 </body>
