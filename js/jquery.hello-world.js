@@ -1,7 +1,7 @@
 (function($) {
   $.fn.helloWorld = function() {
     // 'this' is already a jQuery object
-    this.each( function() {
+    return this.each( function() {
       $(this).text("Hello, World!");
     });
   }
